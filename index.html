@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Dev & Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    
+<div id="project-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div id="modal-body"></div>
+    </div>
+</div>
+
+    <header>
+        <div class="logo">FREELANCER.</div>
+        <nav>
+            <a href="#hero" data-ru="Главная" data-en="Home">Главная</a>
+            <a href="#portfolio" data-ru="Работы" data-en="Projects">Работы</a>
+            <a href="#faq" data-ru="Вопросы" data-en="FAQ">Вопросы</a>
+            <a href="#contacts" data-ru="Контакты" data-en="Contacts">Контакты</a>
+            <button id="lang-switch" class="lang-btn">EN</button>
+        </nav>
+    </header>
+
+    <section id="hero" data-aos="fade-up">
+        <h1 data-ru="Создаю IT-решения, которые работают" data-en="Building IT solutions that work" data-aos="fade-up" data-aos-delay="100">Создаю IT-решения, которые работают</h1>
+        <p data-ru="Разработка Telegram-ботов, веб-дизайн и кастомные моды. Чистый код и фокус на результат." data-en="Telegram bots, web design, and custom game mods. Clean code and focus on results." data-aos="fade-up" data-aos-delay="200">Разработка Telegram-ботов, веб-дизайн и кастомные моды. Чистый код и фокус на результат.</p>
+        <a href="#contacts" class="btn" data-ru="Получить бесплатный набросок" data-en="Get a Free Draft" data-aos="fade-up" data-aos-delay="300">Получить бесплатный набросок</a>
+    </section>
+
+    <section id="portfolio">
+        <h2 class="section-title" data-ru="Мои проекты" data-en="My Projects" data-aos="fade-up">Мои проекты</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-aos="zoom-in">
+                <img src="img2.png" alt="Bot" class="item-img">
+                <div class="item-content">
+                    <h3>SmartSales Bot</h3>
+                    <p data-ru="Многофункциональный Telegram-бот для автоматизации продаж с подключенной платежкой." data-en="Multi-functional Telegram bot for sales automation with integrated payments.">Многофункциональный Telegram-бот для автоматизации продаж с подключенной платежкой.</p>
+                    <span class="tag">Python / aiogram</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="Img.png" alt="Crypto" class="item-img">
+                <div class="item-content">
+                    <h3>Crypto Dashboard</h3>
+                    <p data-ru="Лендинг для крипто-стартапа с адаптивной версткой и стильным темным интерфейсом." data-en="Crypto startup landing page with responsive layout and stylish dark UI.">Лендинг для крипто-стартапа с адаптивной версткой и стильным темным интерфейсом.</p>
+                    <span class="tag">HTML / CSS / JS</span>
+                </div>
+            </div>
+            <div class="portfolio-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="img3.png" alt="Game" class="item-img">
+                <div class="item-content">
+                    <h3 data-ru="Игровой UI" data-en="Game UI">Игровой UI</h3>
+                    <p data-ru="Разработка кастомного интерфейса инвентаря и худа для игрового проекта." data-en="Custom inventory and HUD interface development for gaming projects.">Разработка кастомного интерфейса инвентаря и худа для игрового проекта.</p>
+                    <span class="tag">Design / Pawn</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+        <h2 class="section-title" data-ru="Мой Стек" data-en="Tech Stack">Мой Стек</h2>
+        <div class="skills-grid">
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="100">
+                <h3 data-ru="Бэкенд и Боты" data-en="Backend & Bots">Бэкенд и Боты</h3>
+                <div class="skill-items">
+                    <div class="skill-card"><i class="fab fa-python"></i> <span>Python / aiogram</span></div>
+                    <div class="skill-card"><i class="fas fa-database"></i> <span>MySQL / SQLite</span></div>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="200">
+                <h3 data-ru="Game Development" data-en="Game Development">Game Development</h3>
+                <div class="skill-items">
+                    <div class="skill-card"><i class="fas fa-code"></i> <span>Pawn / C++</span></div>
+                    <div class="skill-card"><i class="fas fa-server"></i> <span>SAMP / CRMP API</span></div>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="300">
+                <h3 data-ru="Фронтенд" data-en="Frontend">Фронтенд</h3>
+                <div class="skill-items">
+                    <div class="skill-card"><i class="fab fa-html5"></i> <span>HTML5 / CSS3</span></div>
+                    <div class="skill-card"><i class="fab fa-js"></i> <span>JavaScript</span></div>
+                </div>
+            </div>
+            <div class="skill-category" data-aos="zoom-in" data-aos-delay="400">
+                <h3 data-ru="Дизайн" data-en="Design">Дизайн</h3>
+                <div class="skill-items">
+                    <div class="skill-card"><i class="fab fa-figma"></i> <span>Figma</span></div>
+                    <div class="skill-card"><i class="fas fa-paint-brush"></i> <span>Photoshop</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" data-aos="fade-up">
+        <h2 class="section-title" data-ru="Частые вопросы" data-en="FAQ">Частые вопросы</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-ru="Сколько времени занимает разработка?" data-en="How long does development take?">Сколько времени занимает разработка?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-ru="Сроки зависят от сложности. Простой бот или лендинг — 3-5 дней." data-en="Timelines depend on complexity. Simple projects take 3-5 days.">Сроки зависят от сложности. Простой бот или лендинг — 3-5 дней.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-ru="Нужен ли хостинг для бота?" data-en="Do I need hosting?">Нужен ли хостинг для бота?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-ru="Да, бот должен работать 24/7. Я помогу с выбором и правильной настройкой сервера." data-en="Yes, the bot needs to run 24/7. I will help with choosing and setting up the server.">Да, бот должен работать 24/7. Я помогу с выбором и правильной настройкой сервера.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-ru="Как происходит процесс оплаты?" data-en="How does the payment process work?">Как происходит процесс оплаты?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-ru="Обычно я работаю по предоплате 50%. Вторую часть вы оплачиваете после полного утверждения и тестирования готового проекта." data-en="I usually work with a 50% prepayment. The second half is paid after the full approval and testing of the finished project.">Обычно я работаю по предоплате 50%. Вторую часть вы оплачиваете после полного утверждения и тестирования готового проекта.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-ru="Вносите ли вы бесплатные правки?" data-en="Do you provide free revisions?">Вносите ли вы бесплатные правки?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-ru="Да, в стоимость заложены 2-3 итерации правок. Моя главная цель — сделать так, чтобы дизайн или код работал идеально для ваших задач." data-en="Yes, 2-3 rounds of revisions are included in the price. My main goal is to make sure the design or code works perfectly for your needs.">Да, в стоимость заложены 2-3 итерации правок. Моя главная цель — сделать так, чтобы дизайн или код работал идеально для ваших задач.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span data-ru="Делаете ли вы интерфейсы для Ukraine GTA, SAMP, CRMP?" data-en="Do you make interfaces for Ukraine GTA, SAMP, CRMP?">Делаете ли вы интерфейсы для Ukraine GTA, SAMP, CRMP?</span>
+                    <span class="faq-icon">+</span>
+                </div>
+                <div class="faq-answer">
+                    <p data-ru="Да, я специализируюсь на кастомных UI (инвентари, худы, авторизация) для серверов типа Ukraine GTA, SAMP, CRMP, а также пишу скрипты на Pawn." data-en="Yes, I specialize in custom UI (inventories, HUDs, login screens) for Ukraine GTA, SAMP, and CRMP servers, and develop scripts in Pawn.">Да, я специализируюсь на кастомных UI (инвентари, худы, авторизация) для серверов типа Ukraine GTA, SAMP, CRMP, а также пишу скрипты на Pawn.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacts" class="contact-section">
+        <div class="lead-magnet-box" data-aos="flip-up">
+            <h3 data-ru="🔥 Сомневаетесь? Начнем с бесплатного наброска!" data-en="🔥 In doubt? Let's start with a free draft!">🔥 Сомневаетесь? Начнем с бесплатного наброска!</h3>
+            <p data-ru="Опишите вашу задачу. Я бесплатно набросаю черновой вариант худа/инвентаря для вашего сервера или продумаю логику работы Telegram-бота. Вы ничем не рискуете!" data-en="Describe your task. I will sketch a free draft of the HUD/inventory for your server or map out the logic for your Telegram bot. Zero risks!">Опишите вашу задачу. Я бесплатно набросаю черновой вариант худа/инвентаря для вашего сервера или продумаю логику работы Telegram-бота. Вы ничем не рискуете!</p>
+        </div>
+
+        <div class="add-review-form" data-aos="fade-up" data-aos-delay="200">
+            <h3 data-ru="Оставить заявку на разбор" data-en="Request a Free Breakdown">Оставить заявку на разбор</h3>
+            <form id="tgForm">
+                <input type="text" id="senderName" placeholder="Ваше имя" required>
+                <input type="text" id="senderContact" placeholder="Ваш Telegram (@username) или Email" required>
+                <textarea id="senderMessage" rows="4" placeholder="Напишите пару слов о задаче (например: нужен бот для автопродаж или худ для CRMP)..." required></textarea>
+                <button type="submit" class="btn pulse-btn" data-ru="Хочу бесплатный набросок" data-en="I want a free draft">Хочу бесплатный набросок</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <h2 data-ru="Мои контакты" data-en="My Contacts">Мои контакты</h2>
+        <div class="contact-links-footer">
+            <a href="https://t.me/@Kalev12" target="_blank" class="contact-btn-new tg"><i class="fab fa-telegram-plane"></i> Telegram</a>
+            <a href="mailto:https://t.me/ismpappaapp@gmail.com" class="contact-btn-new email"><i class="fas fa-envelope"></i> Email</a>
+            <a href="https://freelancehunt.com/freelancer/https:// target="_blank" class="contact-btn-new freelance"><i class="fas fa-briefcase"></i> Freelance</a>
+        </div>
+        <p class="copyright">© 2026</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        const projectDetails = {
+            'SmartSales Bot': {
+                ru: `<h2>SmartSales Bot</h2><p>Полная автоматизация продаж в Telegram.</p><h4>Что было сделано:</h4><ul><li>Разработка на aiogram 3.x;</li><li>Интеграция платежных систем (Stars, CryptoPay);</li><li>Админ-панель для управления товарами и рассылками;</li><li>Система аналитики доходов.</li></ul>`,
+                en: `<h2>SmartSales Bot</h2><p>Full sales automation in Telegram.</p><h4>Key Features:</h4><ul><li>Developed with aiogram 3.x;</li><li>Integrated payment systems (Stars, CryptoPay);</li><li>Admin panel for inventory and broadcasts;</li><li>Revenue analytics system.</li></ul>`
+            },
+            'Crypto Dashboard': {
+                ru: `<h2>Crypto Dashboard</h2><p>Современный лендинг для крипто-проекта.</p><h4>Технические детали:</h4><ul><li>Адаптивная верстка (Mobile First);</li><li>Анимации при скролле (AOS);</li><li>Интерактивные графики цен в реальном времени;</li><li>Стильный темный интерфейс в стиле Glassmorphism.</li></ul>`,
+                en: `<h2>Crypto Dashboard</h2><p>Modern landing page for a crypto project.</p><h4>Technical details:</h4><ul><li>Responsive layout (Mobile First);</li><li>Scroll animations (AOS);</li><li>Real-time interactive price charts;</li><li>Stylish dark interface with Glassmorphism effect.</li></ul>`
+            },
+            'Игровой UI': {
+                ru: `<h2>Game Inventory UI</h2><p>Кастомный интерфейс для игровых серверов на базе Ukraine GTA, SAMP, CRMP.</p><h4>Реализовано:</h4><ul><li>Сложная система инвентаря с перетаскиванием (Drag-and-drop);</li><li>Оптимизированный HUD (здоровье, броня, деньги, микрофон);</li><li>Дизайн выполнен в Figma с нуля;</li><li>Связка CEF (HTML/CSS/JS) с бэкендом на Pawn/C++.</li></ul>`,
+                en: `<h2>Game Inventory UI</h2><p>Custom interface for Ukraine GTA, SAMP, CRMP game servers.</p><h4>Implemented features:</h4><ul><li>Complex inventory system with Drag-and-drop;</li><li>Optimized HUD (health, armor, money, voice indicator);</li><li>Designed from scratch in Figma;</li><li>CEF (HTML/CSS/JS) integration with Pawn/C++ backend.</li></ul>`
+            }
+        };
+
+        const modal = document.getElementById('project-modal');
+        const modalBody = document.getElementById('modal-body');
+        const closeModal = document.querySelector('.close-modal');
+
+        document.querySelectorAll('.portfolio-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const title = item.querySelector('h3').innerText;
+                const lang = isEnglish ? 'en' : 'ru';
+                modalBody.innerHTML = projectDetails[title][lang];
+                modal.style.display = 'block';
+            });
+        });
+
+        closeModal.onclick = () => modal.style.display = 'none';
+        window.onclick = (event) => { if (event.target == modal) modal.style.display = 'none'; };
+        
+        AOS.init({ duration: 1000, easing: 'ease-in-out', once: true, offset: 120 });
+
+        const langBtn = document.getElementById('lang-switch');
+        let isEnglish = false; 
+
+        langBtn.addEventListener('click', () => {
+            isEnglish = !isEnglish;
+            const currentLang = isEnglish ? 'en' : 'ru';
+            langBtn.textContent = isEnglish ? 'RU' : 'EN';
+
+            document.querySelectorAll('[data-ru]').forEach(el => {
+                el.textContent = el.getAttribute(`data-${currentLang}`);
+            });
+
+            const nameInput = document.getElementById('senderName');
+            const contactInput = document.getElementById('senderContact');
+            const msgInput = document.getElementById('senderMessage');
+            
+            if (isEnglish) {
+                nameInput.placeholder = "Your Name";
+                contactInput.placeholder = "Your Telegram (@username) or Email";
+                msgInput.placeholder = "Write a few words about the task (e.g. need an auto-sales bot or HUD for CRMP)...";
+            } else {
+                nameInput.placeholder = "Ваше имя";
+                contactInput.placeholder = "Ваш Telegram (@username) или Email";
+                msgInput.placeholder = "Напишите пару слов о задаче (например: нужен бот для автопродаж или худ для CRMP)...";
+            }
+        });
+
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                item.classList.toggle('active');
+            });
+        });
+
+        // ОБНОВЛЕННАЯ ОТПРАВКА В TELEGRAM (Теперь с контактом!)
+        document.getElementById('tgForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const token = '8256413766:AAGO174dQw8S_Hce4LQO0X4Q3Zf_IV-ny3Y';
+            const chatId = '7059576652';
+            
+            const name = document.getElementById('senderName').value;
+            const contact = document.getElementById('senderContact').value;
+            const message = document.getElementById('senderMessage').value;
+            
+            // Формируем красивое сообщение для тебя в Телегу
+            const text = `🔥 НОВАЯ ЗАЯВКА С САЙТА!\n\n👤 Имя: ${name}\n📞 Как связаться: ${contact}\n💬 Задача: ${message}`;
+            
+            fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: chatId, text: text })
+            }).then(res => {
+                if(res.ok) { 
+                    alert(isEnglish ? 'Sent successfully! I will contact you soon.' : 'Успешно отправлено! Скоро свяжусь с вами.');
+                    document.getElementById('tgForm').reset();
+                }
+            });
+        });
+    </script>
+</body>
+</html>
