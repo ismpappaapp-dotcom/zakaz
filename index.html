@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freelancer — Telegram-боты, Веб-дизайн, Игровые UI</title>
+    <meta name="description" content="Разработка Telegram-ботов, веб-дизайн и кастомные игровые интерфейсы. Чистый код, современный UI и фокус на результат. Бесплатный набросок для каждого клиента.">
+    <meta name="keywords" content="Telegram бот, веб-дизайн, фриланс, разработка сайтов, SAMP, CRMP, игровой UI, aiogram, Python">
+    <meta name="author" content="Freelancer">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (для Telegram, VK, и других при шаринге ссылки) -->
+    <meta property="og:title" content="Freelancer — IT-решения, которые работают">
+    <meta property="og:description" content="Telegram-боты, веб-дизайн, кастомные моды. Бесплатный набросок для каждого клиента.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="Img.png">
+
+    <!-- Preconnect для быстрой загрузки шрифтов -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Space+Grotesk:wght@500;700;900&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Favicon (браузерная иконка) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💻</text></svg>">
+</head>
+<body>
+    
+    <!-- Noise overlay -->
+    <div class="noise" aria-hidden="true"></div>
+
+    <!-- Background Gradients (Mesh) -->
+    <div class="mesh-bg" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Modal -->
+    <div id="project-modal" class="modal" role="dialog" aria-modal="true" aria-label="Детали проекта">
+        <div class="modal-content glass-panel">
+            <span class="close-modal" role="button" aria-label="Закрыть">&times;</span>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <header class="glass-header">
+        <a href="#hero" class="logo" aria-label="На главную">FREELANCER<span>.</span></a>
+        <nav aria-label="Основная навигация">
+            <a href="#hero" data-ru="Главная" data-en="Home">Главная</a>
+            <a href="#portfolio" data-ru="Работы" data-en="Projects">Работы</a>
+            <a href="#faq" data-ru="Вопросы" data-en="FAQ">Вопросы</a>
+            <button id="lang-switch" class="lang-btn" aria-label="Switch language">EN</button>
+            <a href="#contacts" class="btn header-btn" data-ru="Связаться" data-en="Contact">Связаться</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <div class="badge" data-aos="fade-down" data-ru="Доступен для проектов" data-en="Available for work">
+                    <span class="pulse-dot" aria-hidden="true"></span> <span class="badge-text">Доступен для проектов</span>
+                </div>
+                <h1 data-ru="Создаю IT-решения,<br>которые <i>работают</i>." data-en="Building IT solutions<br>that <i>work</i>." data-aos="fade-up" data-aos-delay="100">Создаю IT-решения,<br>которые <i>работают</i>.</h1>
+                <p data-ru="Разработка Telegram-ботов, веб-дизайн и кастомные моды. Чистый код, современный UI и фокус на результат." data-en="Telegram bots, web design, and custom game mods. Clean code, modern UI, and focus on results." data-aos="fade-up" data-aos-delay="200">Разработка Telegram-ботов, веб-дизайн и кастомные моды. Чистый код, современный UI и фокус на результат.</p>
+                <div class="hero-actions" data-aos="fade-up" data-aos-delay="300">
+                    <a href="#contacts" class="btn primary-btn" data-ru="Обсудить проект" data-en="Discuss Project">Обсудить проект <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+                    <a href="#portfolio" class="btn secondary-btn" data-ru="Смотреть работы" data-en="View Work">Смотреть работы</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marquee -->
+        <div class="marquee-container" data-aos="fade-up" aria-hidden="true">
+            <div class="marquee">
+                <span>Python</span><span class="dot">•</span>
+                <span>Aiogram</span><span class="dot">•</span>
+                <span>Web Design</span><span class="dot">•</span>
+                <span>Figma</span><span class="dot">•</span>
+                <span>JavaScript</span><span class="dot">•</span>
+                <span>SAMP/CRMP API</span><span class="dot">•</span>
+                <span>Pawn</span><span class="dot">•</span>
+                <span>UI/UX</span><span class="dot">•</span>
+                <span>Python</span><span class="dot">•</span>
+                <span>Aiogram</span><span class="dot">•</span>
+                <span>Web Design</span><span class="dot">•</span>
+                <span>Figma</span><span class="dot">•</span>
+                <span>JavaScript</span><span class="dot">•</span>
+                <span>SAMP/CRMP API</span><span class="dot">•</span>
+                <span>Pawn</span><span class="dot">•</span>
+                <span>UI/UX</span><span class="dot">•</span>
+            </div>
+        </div>
+
+        <section id="portfolio">
+            <div class="section-header" data-aos="fade-up">
+                <h2 data-ru="Избранные <i>проекты</i>" data-en="Featured <i>projects</i>">Избранные <i>проекты</i></h2>
+                <p data-ru="Работы, которыми я горжусь" data-en="Work I'm proud of">Работы, которыми я горжусь</p>
+            </div>
+            
+            <div class="bento-grid">
+                <!-- Large Item -->
+                <div class="bento-item large glass-panel" data-aos="fade-up">
+                    <div class="item-img-wrapper">
+                        <img src="bot-3d.gif" alt="SmartSales Bot — Telegram-бот для автоматизации продаж" class="item-img" loading="lazy">
+                    </div>
+                    <div class="item-content">
+                        <h3>SmartSales Bot</h3>
+                        <p data-ru="Многофункциональный Telegram-бот для автоматизации продаж с подключенной платежкой." data-en="Multi-functional Telegram bot for sales automation with integrated payments.">Многофункциональный Telegram-бот для автоматизации продаж с подключенной платежкой.</p>
+                        <div class="tags"><span class="tag">Python</span><span class="tag">aiogram</span></div>
+                    </div>
+                </div>
+
+                <!-- Regular items -->
+                <div class="bento-item glass-panel" data-aos="fade-up" data-aos-delay="100">
+                    <div class="item-img-wrapper">
+                        <img src="img1.png" alt="Crypto Dashboard — лендинг для крипто-стартапа" class="item-img" loading="lazy">
+                    </div>
+                    <div class="item-content">
+                        <h3>Crypto Dashboard</h3>
+                        <p data-ru="Лендинг для крипто-стартапа с адаптивной версткой." data-en="Crypto startup landing page with responsive layout.">Лендинг для крипто-стартапа с адаптивной версткой.</p>
+                        <div class="tags"><span class="tag">HTML/CSS/JS</span><span class="tag">UI/UX</span></div>
+                    </div>
+                </div>
+
+                <div class="bento-item glass-panel" data-aos="fade-up" data-aos-delay="200">
+                    <div class="item-img-wrapper">
+                        <img src="img3.png" alt="Игровой UI — кастомный интерфейс инвентаря" class="item-img" loading="lazy">
+                    </div>
+                    <div class="item-content">
+                        <h3 data-ru="Игровой UI" data-en="Game UI">Игровой UI</h3>
+                        <p data-ru="Кастомный интерфейс инвентаря для игрового проекта." data-en="Custom inventory interface for gaming projects.">Кастомный интерфейс инвентаря для игрового проекта.</p>
+                        <div class="tags"><span class="tag">Design</span><span class="tag">Pawn</span></div>
+                    </div>
+                </div>
+                
+                <div class="bento-item wide glass-panel" data-aos="fade-up" data-aos-delay="300">
+                    <div class="item-img-wrapper">
+                        <img src="hero-3d.gif" alt="Сайты под ключ — разработка адаптивных веб-сайтов" class="item-img" loading="lazy">
+                    </div>
+                    <div class="item-content">
+                        <h3 data-ru="Сайты под ключ" data-en="Turnkey Websites">Сайты под ключ</h3>
+                        <p data-ru="Разработка современных, быстрых и адаптивных сайтов. От стильных визиток до интернет-магазинов." data-en="Development of modern, fast, and responsive websites. From stylish business cards to e-commerce stores.">Разработка современных, быстрых и адаптивных сайтов. От стильных визиток до интернет-магазинов.</p>
+                        <div class="tags"><span class="tag">Web Design</span><span class="tag">Frontend</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq">
+            <div class="section-header" data-aos="fade-up">
+                <h2 data-ru="Частые <i>вопросы</i>" data-en="Frequently Asked <i>Questions</i>">Частые <i>вопросы</i></h2>
+            </div>
+            <div class="faq-container">
+                <div class="faq-item glass-panel" data-aos="fade-up">
+                    <div class="faq-question">
+                        <span data-ru="Сколько времени занимает разработка?" data-en="How long does development take?">Сколько времени занимает разработка?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-ru="Сроки зависят от сложности. Простой бот или лендинг — 3-5 дней." data-en="Timelines depend on complexity. Simple projects take 3-5 days.">Сроки зависят от сложности. Простой бот или лендинг — 3-5 дней.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-panel" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question">
+                        <span data-ru="Как происходит процесс оплаты?" data-en="How does the payment process work?">Как происходит процесс оплаты?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-ru="Обычно предоплата 50%. Вторую часть — после утверждения и тестирования." data-en="Usually 50% prepayment. The second half — after approval and testing.">Обычно предоплата 50%. Вторую часть — после утверждения и тестирования.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-panel" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question">
+                        <span data-ru="Вносите ли вы бесплатные правки?" data-en="Do you provide free revisions?">Вносите ли вы бесплатные правки?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-ru="Да, в стоимость заложены 2-3 итерации правок. Моя цель — идеальный результат." data-en="Yes, 2-3 rounds of revisions are included. My goal is a perfect result.">Да, в стоимость заложены 2-3 итерации правок. Моя цель — идеальный результат.</p>
+                    </div>
+                </div>
+                <div class="faq-item glass-panel" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question">
+                        <span data-ru="Делаете ли интерфейсы для SAMP / CRMP?" data-en="Do you make interfaces for SAMP / CRMP?">Делаете ли интерфейсы для SAMP / CRMP?</span>
+                        <span class="faq-icon" aria-hidden="true">+</span>
+                    </div>
+                    <div class="faq-answer">
+                        <p data-ru="Да, я специализируюсь на кастомных UI (инвентари, худы, авторизация) для серверов, а также пишу скрипты на Pawn." data-en="Yes, I specialize in custom UI (inventories, HUDs, login screens) for servers and write Pawn scripts.">Да, я специализируюсь на кастомных UI (инвентари, худы, авторизация) для серверов, а также пишу скрипты на Pawn.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacts">
+            <div class="contact-grid">
+                <div class="contact-info glass-panel" data-aos="fade-right">
+                    <h3 data-ru="Давайте создадим <i>что-то великое</i>." data-en="Let's build <i>something great</i>.">Давайте создадим <i>что-то великое</i>.</h3>
+                    <p data-ru="Опишите вашу задачу. Я бесплатно набросаю черновой вариант худа/инвентаря для вашего сервера или продумаю логику работы Telegram-бота." data-en="Describe your task. I will sketch a free draft of the HUD/inventory for your server or map out the logic for your Telegram bot.">Опишите вашу задачу. Я бесплатно набросаю черновой вариант худа/инвентаря для вашего сервера или продумаю логику работы Telegram-бота.</p>
+                    
+                    <div class="contact-links-footer">
+                        <a href="https://t.me/Kalev12" target="_blank" rel="noopener noreferrer" class="contact-btn-new tg"><i class="fab fa-telegram-plane" aria-hidden="true"></i> Telegram</a>
+                        <a href="mailto:ismpappaapp@gmail.com" class="contact-btn-new email"><i class="fas fa-envelope" aria-hidden="true"></i> Email</a>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper glass-panel" data-aos="fade-left">
+                    <form id="tgForm" novalidate>
+                        <div class="input-group">
+                            <input type="text" id="senderName" required placeholder=" " autocomplete="name">
+                            <label for="senderName" data-ru="Ваше имя" data-en="Your Name">Ваше имя</label>
+                        </div>
+                        <div class="input-group">
+                            <input type="text" id="senderContact" required placeholder=" " autocomplete="email">
+                            <label for="senderContact" data-ru="Telegram (@username) или Email" data-en="Telegram or Email">Telegram (@username) или Email</label>
+                        </div>
+                        <div class="input-group">
+                            <textarea id="senderMessage" rows="4" required placeholder=" "></textarea>
+                            <label for="senderMessage" data-ru="Расскажите о задаче..." data-en="Tell me about the task...">Расскажите о задаче...</label>
+                        </div>
+                        <button type="submit" class="btn primary-btn submit-btn">
+                            <span data-ru="Отправить заявку" data-en="Send Request">Отправить заявку</span>
+                            <i class="fas fa-paper-plane" aria-hidden="true"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="copyright">© 2026. Designed with precision.</p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        // Language state (declared first to avoid reference errors)
+        let isEnglish = false;
+
+        // Projects Data
+        const projectDetails = {
+            'SmartSales Bot': {
+                ru: `<h2>SmartSales Bot</h2><p>Полная автоматизация продаж в Telegram.</p><h4>Что было сделано:</h4><ul><li>Разработка на aiogram 3.x;</li><li>Интеграция платежных систем (Stars, CryptoPay);</li><li>Админ-панель для управления товарами;</li><li>Система аналитики доходов.</li></ul>`,
+                en: `<h2>SmartSales Bot</h2><p>Full sales automation in Telegram.</p><h4>Key Features:</h4><ul><li>Developed with aiogram 3.x;</li><li>Integrated payment systems (Stars, CryptoPay);</li><li>Admin panel for inventory;</li><li>Revenue analytics system.</li></ul>`
+            },
+            'Crypto Dashboard': {
+                ru: `<h2>Crypto Dashboard</h2><p>Современный лендинг для крипто-проекта.</p><h4>Детали:</h4><ul><li>Адаптивная верстка (Mobile First);</li><li>Анимации при скролле (AOS);</li><li>Интерактивные графики цен;</li><li>Стильный темный интерфейс в стиле Glassmorphism.</li></ul>`,
+                en: `<h2>Crypto Dashboard</h2><p>Modern landing page for a crypto project.</p><h4>Details:</h4><ul><li>Responsive layout (Mobile First);</li><li>Scroll animations (AOS);</li><li>Interactive price charts;</li><li>Stylish dark Glassmorphism interface.</li></ul>`
+            },
+            'Игровой UI': {
+                ru: `<h2>Game Inventory UI</h2><p>Кастомный интерфейс для игрового сервера.</p><h4>Реализовано:</h4><ul><li>Инвентарь с Drag-and-drop;</li><li>Оптимизированный HUD;</li><li>Дизайн выполнен в Figma с нуля;</li><li>Связка CEF с Pawn/C++.</li></ul>`,
+                en: `<h2>Game Inventory UI</h2><p>Custom interface for game server.</p><h4>Implemented:</h4><ul><li>Drag-and-drop inventory;</li><li>Optimized HUD;</li><li>Designed from scratch in Figma;</li><li>CEF integration with Pawn/C++.</li></ul>`
+            },
+            'Сайты под ключ': {
+                ru: `<h2>Разработка сайтов</h2><p>Создание веб-проектов любой сложности.</p><h4>Входит:</h4><ul><li>Адаптивная верстка;</li><li>Современный UI/UX дизайн;</li><li>Настройка форм с отправкой в Telegram;</li><li>Оптимизация скорости и базовое SEO.</li></ul>`,
+                en: `<h2>Turnkey Websites</h2><p>Creation of web projects of any complexity.</p><h4>Included:</h4><ul><li>Responsive layout;</li><li>Modern UI/UX design;</li><li>Forms with Telegram integration;</li><li>Speed optimization and basic SEO.</li></ul>`
+            }
+        };
+
+        // Modal Logic
+        const modal = document.getElementById('project-modal');
+        const modalBody = document.getElementById('modal-body');
+        const closeModal = document.querySelector('.close-modal');
+
+        document.querySelectorAll('.bento-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const title = item.querySelector('h3').innerText;
+                const lang = isEnglish ? 'en' : 'ru';
+                if(projectDetails[title]) {
+                    modalBody.innerHTML = projectDetails[title][lang];
+                    modal.style.display = 'flex';
+                    document.body.style.overflow = 'hidden'; // prevent scroll behind modal
+                }
+            });
+        });
+
+        function closeModalFn() {
+            modal.style.display = 'none';
+            document.body.style.overflow = '';
+        }
+
+        closeModal.onclick = closeModalFn;
+        window.addEventListener('click', (e) => { if (e.target === modal) closeModalFn(); });
+        window.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeModalFn(); });
+        
+        // Init AOS
+        AOS.init({ duration: 800, easing: 'ease-out-cubic', once: true, offset: 50 });
+
+        // Language Switch
+        const langBtn = document.getElementById('lang-switch');
+
+        langBtn.addEventListener('click', () => {
+            isEnglish = !isEnglish;
+            const currentLang = isEnglish ? 'en' : 'ru';
+            langBtn.textContent = isEnglish ? 'RU' : 'EN';
+            document.documentElement.lang = isEnglish ? 'en' : 'ru';
+
+            document.querySelectorAll('[data-ru]').forEach(el => {
+                el.innerHTML = el.getAttribute(`data-${currentLang}`);
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-item').forEach(item => {
+            item.addEventListener('click', () => {
+                // Close other open FAQ items for accordion behavior
+                document.querySelectorAll('.faq-item.active').forEach(other => {
+                    if (other !== item) other.classList.remove('active');
+                });
+                item.classList.toggle('active');
+            });
+        });
+
+        // Telegram Form with validation & error handling
+        document.getElementById('tgForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('senderName').value.trim();
+            const contact = document.getElementById('senderContact').value.trim();
+            const message = document.getElementById('senderMessage').value.trim();
+            
+            if (!name || !contact || !message) {
+                alert(isEnglish ? 'Please fill in all fields.' : 'Пожалуйста, заполните все поля.');
+                return;
+            }
+            
+            const token = '8256413766:AAGO174dQw8S_Hce4LQO0X4Q3Zf_IV-ny3Y';
+            const chatId = '7059576652';
+            const text = `🔥 НОВАЯ ЗАЯВКА С САЙТА!\n\n👤 Имя: ${name}\n📞 Контакт: ${contact}\n💬 Задача: ${message}`;
+            
+            const btn = this.querySelector('button');
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = isEnglish ? 'Sending...' : 'Отправка...';
+            btn.disabled = true;
+            
+            fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ chat_id: chatId, text: text })
+            })
+            .then(res => {
+                if (res.ok) { 
+                    btn.innerHTML = isEnglish ? 'Sent! ✓' : 'Отправлено ✓';
+                    btn.style.background = '#10B981';
+                    btn.style.color = '#fff';
+                    setTimeout(() => {
+                        btn.innerHTML = originalHTML;
+                        btn.style.background = '';
+                        btn.style.color = '';
+                        btn.disabled = false;
+                        this.reset();
+                    }, 3000);
+                } else {
+                    throw new Error('Network response was not ok');
+                }
+            })
+            .catch(() => {
+                btn.innerHTML = isEnglish ? 'Error. Try again.' : 'Ошибка. Попробуйте ещё раз.';
+                btn.style.background = '#EF4444';
+                btn.style.color = '#fff';
+                setTimeout(() => {
+                    btn.innerHTML = originalHTML;
+                    btn.style.background = '';
+                    btn.style.color = '';
+                    btn.disabled = false;
+                }, 3000);
+            });
+        });
+
+        // Smooth scroll for anchor links (especially for Safari)
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    e.preventDefault();
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
